@@ -64,6 +64,8 @@ public class Main extends Application {
 
         AnchorPane.setLeftAnchor(userInput, 1.0);
         AnchorPane.setBottomAnchor(userInput, 1.0);
+
+        dialogContainer.heightProperty().addListener(observable -> scrollPane.setVvalue(1.0));
     }
 
     /**
