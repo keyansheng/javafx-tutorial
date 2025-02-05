@@ -9,7 +9,7 @@ repositories {
 }
 
 application {
-    mainClass.set("Duke")
+    mainClass.set("Launcher")
 }
 
 shadowJar {
