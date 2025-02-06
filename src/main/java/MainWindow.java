@@ -23,34 +23,6 @@ public class MainWindow extends AnchorPane {
     private Image userImage = new Image(this.getClass().getResourceAsStream("/images/DaUser.png"));
     private Image dukeImage = new Image(this.getClass().getResourceAsStream("/images/DaDuke.png"));
 
-    MainWindow() {
-        scrollPane = new ScrollPane();
-        dialogContainer = new VBox();
-        userInput = new TextField();
-        sendButton = new Button("Send");
-        duke = new Duke();
-    }
-
-    ScrollPane getScrollPane() {
-        return scrollPane;
-    }
-
-    VBox getDialogContainer() {
-        return dialogContainer;
-    }
-
-    TextField getUserInput() {
-        return userInput;
-    }
-
-    Button getSendButton() {
-        return sendButton;
-    }
-
-    void getHandleUserInput() {
-        handleUserInput();
-    }
-
     @FXML
     public void initialize() {
         scrollPane.vvalueProperty().bind(dialogContainer.heightProperty());
